@@ -4,7 +4,7 @@ public class Point {
         this.yCoordinate = yCoordinate;
     }
 
-    public double xCoordinate, yCoordinate;
+    private double xCoordinate, yCoordinate;
 
     public double getX() {
         return xCoordinate;

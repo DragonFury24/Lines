@@ -9,7 +9,6 @@ public class LineSegment {
 
     //Returns distance of both points using distance formula
     public double getLength() {
-        endpoint0.xCoordinate++;
         return Math.sqrt(Math.pow(endpoint1.getX() - endpoint0.getX(), 2) + Math.pow(endpoint1.getY() - endpoint0.getY(), 2));
     }
 
@@ -24,6 +23,7 @@ public class LineSegment {
     }
 
     public boolean intersectsY() {
+        //Math.signum() found from java.Math source library.
         return Math.signum(endpoint0.getX()) != Math.signum(endpoint1.getX());
     }
 
