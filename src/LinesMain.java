@@ -20,12 +20,12 @@ public class LinesMain {
         lineSegments[1] = new LineSegment(12, 32, 65, -23);
 
         //print out the points, length, slope, and whether the lines intersect the axes for each LineSegment
-        for (int i = 0; i < lineSegments.length; i++) {
-            System.out.println("Points: " + lineSegments[i].toString());
-            System.out.println("Length: " + lineSegments[i].getLength());
-            System.out.println("Slope: " + lineSegments[i].getSlope());
-            System.out.println("Intersects x-axis: " + lineSegments[i].intersectsX());
-            System.out.println("Intersects y-axis: " + lineSegments[i].intersectsY());
+        for (LineSegment lineSegment : lineSegments) {
+            System.out.println("Points: " + lineSegment.toString());
+            System.out.println("Length: " + lineSegment.getLength());
+            System.out.println("Slope: " + lineSegment.getSlope());
+            System.out.println("Intersects x-axis: " + lineSegment.intersectsX());
+            System.out.println("Intersects y-axis: " + lineSegment.intersectsY());
             System.out.println();
         }
     }
