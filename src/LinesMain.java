@@ -19,20 +19,14 @@ public class LinesMain {
         lineSegments[0] = new LineSegment(25, 99, -98, 89);
         lineSegments[1] = new LineSegment(12, 32, 65, -23);
 
-        //print out the points, length, slope, and whether the lines intersect the axes the line segment
-        System.out.println("Points: " + lineSegments[0].toString());
-        System.out.println("Length: " + lineSegments[0].getLength());
-        System.out.println("Slope: " + lineSegments[0].getSlope());
-        System.out.println("Intersects x-axis: " + lineSegments[0].intersectsX());
-        System.out.println("Intersects y-axis: " + lineSegments[0].intersectsY());
-
-        //print out the points, length, slope, and whether the lines intersect the axes the line segment
-        System.out.println();
-        System.out.println("Points: " + lineSegments[1].toString());
-        System.out.println("Length: " + lineSegments[1].getLength());
-        System.out.println("Slope: " + lineSegments[1].getSlope());
-        System.out.println("Intersects x-axis: " + lineSegments[1].intersectsX());
-        System.out.println("Intersects y-axis: " + lineSegments[1].intersectsY());
-
+        //print out the points, length, slope, and whether the lines intersect the axes for each LineSegment
+        for (int i = 0; i < lineSegments.length; i++) {
+            System.out.println("Points: " + lineSegments[i].toString());
+            System.out.println("Length: " + lineSegments[i].getLength());
+            System.out.println("Slope: " + lineSegments[i].getSlope());
+            System.out.println("Intersects x-axis: " + lineSegments[i].intersectsX());
+            System.out.println("Intersects y-axis: " + lineSegments[i].intersectsY());
+            System.out.println();
+        }
     }
 }
